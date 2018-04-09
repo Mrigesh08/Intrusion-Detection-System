@@ -41,9 +41,9 @@ def convert(srcfilename,dstfilename):
 		elif (prefix , event) == ("item.dstip" , "string"):
 			ls.append(convertIPtoInt(value))
 		elif (prefix , event) == ("item.payloadLen" , "string"):
-			ls.append(value)
+			ls.append(int(value))
 		elif (prefix , event) == ("item.proto" , "string"):
-			ls.append(value)
+			ls.append(int(value))
 			bigls.append(ls)
 			ls=[]
 			i=i+1
