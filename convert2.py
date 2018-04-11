@@ -6,7 +6,7 @@ import json
 import os
 from random import randint
 
-writingInterval = 100 # write 1 random record to 'dstfilename' after 'writingInterval' records have been encountered
+writingInterval = 10 # write 1 random record to 'dstfilename' after 'writingInterval' records have been encountered
 def convertIPtoInt(ipaddr):
 	x=ipaddr.split(".")
 	y=1
@@ -58,6 +58,6 @@ def convert(srcfilename,dstfilename):
 
 
 srcfilename = "./answer"
-dstfilename = "./pythonarr2.py"
+dstfilename = "./pythonarr3.py"
 
 convert(srcfilename,dstfilename)
